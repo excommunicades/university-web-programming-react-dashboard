@@ -27,15 +27,17 @@ jobs:
           node-version: 18
 
       - name: Install dependencies
+        working-directory: ./time-dashboard
         run: npm ci || npm install
 
       - name: Build project
+        working-directory: ./time-dashboard
         run: npm run build
 
       - name: Upload build artifacts
         uses: actions/upload-pages-artifact@v4
         with:
-          path: dist
+          path: time-dashboard/dist
 
   deploy:
     runs-on: ubuntu-latest
