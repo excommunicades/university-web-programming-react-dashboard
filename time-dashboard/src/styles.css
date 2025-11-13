@@ -151,7 +151,7 @@ body {
 	font-size: 0.9rem;
 	color: hsl(236, 100%, 87%);
 }
-
+.card.Work::before { background-color: hsl(15, 100%, 80%); }
 .card.Play::before { background-color: hsl(195, 74%, 62%); }
 .card.Study::before { background-color: hsl(348, 100%, 81%); }
 .card.Exercise::before { background-color: hsl(145, 100%, 78%); }
